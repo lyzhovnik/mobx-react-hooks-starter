@@ -1,0 +1,56 @@
+{
+  "name": "my-app2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "lint": "tslint --fix -p tsconfig.json -c tslint.json"
+  },
+  "dependencies": {
+    "@types/jest": "24.0.13",
+    "@types/node": "12.0.2",
+    "@types/react": "16.8.18",
+    "@types/react-dom": "16.8.4",
+    "antd": "^3.18.2",
+    "babel-plugin-import": "^1.11.2",
+    "customize-cra": "^0.2.12",
+    "history": "^4.9.0",
+    "mobx": "^5.9.4",
+    "mobx-react-lite": "^1.3.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-app-rewired": "^2.1.3",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "typescript": "3.4.5"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^4.3.3",
+    "prettier": "^1.17.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-origin-ordered-imports-rule": "^1.2.2",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
