@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { BrowserRouter, Router, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import history from './history';
+import modules from './modules';
+
+const isBrowserSupportsHistory = 'pushState' in window.history;
+
+const App = () =>
+  modules.getDataRoot(
+    <BrowserRouter forceRefresh={!isBrowserSupportsHistory}>
+      <Router history={history}>
+        <Switch>{modules.routes}</Switch>
+      </Router>
+    </BrowserRouter>,
   );
-}
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
