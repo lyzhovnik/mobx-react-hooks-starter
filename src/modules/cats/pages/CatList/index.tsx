@@ -14,13 +14,13 @@ const LocationListPage = () => (
     </Helmet>
 
     <CatList></CatList>
-    <br/>
-    <br/>
-    <br/>
-    <img src="https://i.gifer.com/7YUz.gif" alt=""/>
-    <br/>
-    <hr/>
-    <br/>
+    <br />
+    <br />
+    <br />
+    <img src="https://i.gifer.com/7YUz.gif" alt="" />
+    <br />
+    <hr />
+    <br />
     <TestTable></TestTable>
   </AppLayout>
 );

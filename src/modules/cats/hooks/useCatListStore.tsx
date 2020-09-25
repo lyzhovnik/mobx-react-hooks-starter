@@ -18,7 +18,7 @@ const initialState: CatListState = {
   loading: false,
   error: null,
   cats: null,
-}
+};
 
 const CatListStoreContext = createContext({});
 
@@ -42,7 +42,7 @@ const reducer = (state: CatListState, { type, loading, error, cats }: any): CatL
   }
 };
 
-const useCatListStore = (initialState: CatListState): CatListStore => {
+const useCatListStore = (): CatListStore => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   /**
@@ -68,7 +68,7 @@ const useCatListStore = (initialState: CatListState): CatListStore => {
 };
 
 export const CatListStoreProvider: FC = ({ children }) => {
-  const store = useCatListStore(initialState);
+  const store = useCatListStore();
   return <CatListStoreContext.Provider value={store}>{children} </CatListStoreContext.Provider>;
 };
 

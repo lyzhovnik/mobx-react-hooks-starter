@@ -1,3 +1,5 @@
+/* eslint-disable */ // TODO remove
+
 export enum StorageType {
   LocalStorage = 'localStorage',
   SessionStorage = 'sessionStorage',

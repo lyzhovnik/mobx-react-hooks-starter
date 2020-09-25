@@ -1,4 +1,6 @@
-import axios from 'axios';
+/* eslint-disable */ // TODO remove
+
+// import axios from 'axios';
 
 // import settings from '../../settings';
 
