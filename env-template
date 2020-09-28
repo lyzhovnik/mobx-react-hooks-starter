@@ -1,1 +1,2 @@
 REACT_APP_APP_NAME=template-env
+SKIP_PREFLIGHT_CHECK=true

@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  example-name-client:
+    image: "example-name/client:latest"
+    container_name: "example-name-client"
+    ports:
+      - "3000:3000"
+    environment:
+      SKIP_PREFLIGHT_CHECK: ${SKIP_PREFLIGHT_CHECK}
+      REACT_APP_APP_NAME: ${REACT_APP_APP_NAME}
+    restart: "unless-stopped"
+networks:
+  default:
+    external:
+      name: "example-name-${USER}"

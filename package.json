@@ -5,6 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve-build": "serve -s build -l 3000",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint '**/*.{tsx,ts}' --fix",
@@ -32,10 +33,19 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-helmet": "^6.1.0",
     "@types/react-router-dom": "^5.1.5",
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
     "axios": "^0.20.0",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
     "eslint": "^7.9.0",
+    "prettier": "^2.1.2",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-optimize-regex": "^1.2.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -46,15 +56,8 @@
     "eslint-plugin-sonarjs": "^0.5.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
-    "lodash": "^4.17.20",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0"
   },
   "browserslist": {
     "production": [
